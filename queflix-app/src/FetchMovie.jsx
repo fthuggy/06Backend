@@ -17,3 +17,6 @@ export const fetchMovie = async (query) => {
     return [];
   }
 };
+
+//make a new api delete this//
+
