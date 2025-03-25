@@ -3,7 +3,6 @@ import { useNavigate } from "react-router-dom";
 import { useMovieContext } from "./MovieContext";
 import { fetchMovie } from "./FetchMovie";
 import PopupWindow from "./PopupWindow";
-import Arrow from "./Assets/Arrow.svg";
 import "./SearchList.css";
 import "./App.css";
 
@@ -59,10 +58,10 @@ const SearchList = () => {
 
   // Handle Enter key press in the search input
   //const handleKeyPress = (e) => {
-    //if (e.key === "Enter") {
-     // handleButtonClick();
-    //}
-//};
+  //if (e.key === "Enter") {
+  // handleButtonClick();
+  //}
+  //};
 
   const handleAddToWatchlist = (movie) => {
     addToWatchlist(movie);
@@ -80,7 +79,12 @@ const SearchList = () => {
           >
             {" "}
             WATCHLIST
-            <img src={Arrow} alt="Go to Watchlist" width="24" height="24" />
+            <img
+              src="/Arrow.svg"
+              alt="Go to Watchlist"
+              width="24"
+              height="24"
+            />
           </button>
         </div>
       </header>
@@ -113,7 +117,7 @@ const SearchList = () => {
               disabled={isLoading}
               aria-label="Search"
             >
-              <img src={Arrow} alt="Search" width="24" height="24" />
+              <img src="/Arrow.svg" alt="Search" width="24" height="24" />
             </button>
           </div>
 

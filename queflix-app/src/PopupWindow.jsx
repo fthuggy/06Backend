@@ -1,8 +1,6 @@
 import React from "react";
 import "./PopupWindow.css";
-import Cross from "./Assets/Cross.svg";
-import Arrow from "./Assets/Arrow.svg";
-import HeartHollow from "./Assets/HeartHollow.svg";
+
 
 //This function shows the popupwindows component for displaying the movie details.
 function PopupWindow({ movie, onClose, onAddToWatchlist }) {
@@ -40,7 +38,7 @@ function PopupWindow({ movie, onClose, onAddToWatchlist }) {
             </div>
             <div className="close-btn-container">
               <button className="close-btn" onClick={onClose}>
-                <img src={Cross} alt="Close" width="20" height="20" />
+                <img src="/Cross.svg" alt="Close" width="20" height="20" />
               </button>
             </div>
           </div>
@@ -55,7 +53,7 @@ function PopupWindow({ movie, onClose, onAddToWatchlist }) {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img src={Arrow} alt="Go to Netflix" width="24" height="24" />
+                <img src= "/Arrow.svg" alt="Go to Netflix" width="24" height="24" />
               </a>
             </div>
           </div>
@@ -67,7 +65,7 @@ function PopupWindow({ movie, onClose, onAddToWatchlist }) {
           </div>
           <div className="watchlist-heart">
             <img
-              src={HeartHollow}
+              src="/HeartHollow.svg"
               alt="Favorite"
               width="24"
               height="24"

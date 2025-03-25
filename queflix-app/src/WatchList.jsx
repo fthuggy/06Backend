@@ -2,9 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { useMovieContext } from "./MovieContext";
 import "./WatchList.css";
-import EditIcon from "./Assets/Edit.svg";
-import CrossIcon from "./Assets/Cross.svg";
-import ArrowIcon from "./Assets/Arrow.svg";
+
 
 const API_KEY = "LiAYss18E3BEu6lCgVjTAT0LI3SDjWky8XH3TaNL"; // API key for fetching streaming options
 
@@ -66,11 +64,11 @@ function WatchList() {
     <div className="watchlist-container">
       <div className="queueflix-header">
         <div className="queueflix-banner">
-          <h2>QUEUEFLIX</h2>
+          <h2 id="small-header">QUEUEFLIX</h2>
           <h4 className="stream-movies-now">STREAM MOVIES NOW</h4>
         </div>
         <button onClick={() => navigate("/")} className="back-button" aria-label="Back to Search">
-          HOME <img src={ArrowIcon} alt="Stream" width={25} height={25} />
+          HOME <img src="/Arrow.svg" alt="Stream" width={25} height={25} />
         </button>
       </div>
 
@@ -104,13 +102,13 @@ function WatchList() {
                     className="remove-button"
                     aria-label={`Remove ${movie.name} from watchlist`}
                   >
-                    <img src={CrossIcon} alt="Remove from watchlist" width={20} height={20} />
+                    <img src="/Cross.svg" alt="Remove from watchlist" width={20} height={20} />
                   </button>
                 </div>
                 <div className="edit-section">
                   <p tabIndex={0}>{formatType(movie.type)}</p>
                   <button onClick={() => handleEdit(movie)} aria-label={`Edit ${movie.name}`}>
-                    <img src={EditIcon} alt="Edit" width={20} height={20} />
+                    <img src="/Edit.svg" alt="Edit" width={20} height={20} />
                   </button>
                 </div>
               </div>
@@ -122,7 +120,7 @@ function WatchList() {
                     className="stream-button"
                     aria-label={`Watch ${movie.name} on streaming platform`}
                   >
-                    <img src={ArrowIcon} alt="Stream" width={20} height={20} />
+                    <img src="/Arrow.svg" alt="Stream" width={20} height={20} />
                   </button>
                 </div>
               )}

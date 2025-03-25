@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'SuperRichExpanded';
-    src: url('./Assets/fonts/SuperRichExpanded_PERSONAL_USE_ONLY - Stretch.otf') format('opentype');
+    src: url('./Assets/fonts/SuperRichExpanded.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
   }
   
-  h2{
+  #small-header{
     font-family: "SuperRichExpanded";
   }
   
