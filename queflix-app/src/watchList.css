@@ -1,10 +1,15 @@
 @font-face {
-    font-family: 'SuperRichExpanded';
-    src: url('./Assets/fonts/SuperRichExpanded.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
-  }
-  
+  font-family: 'SuperRichExpanded';
+  src: url('/fonts/SuperRichExpanded_PERSONAL_USE_ONLY - Stretch.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: url('/fonts/OpenSans_Condensed-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
   #small-header{
     font-family: "SuperRichExpanded";
   }
@@ -45,6 +50,7 @@
     margin-top: 2rem;  
     margin-bottom: 2rem; 
     text-align: center; 
+    font-family: "SuperRichExpanded";
   }
   ul {
     display: flex;
@@ -142,6 +148,7 @@
   
   p {
     text-transform: capitalize;
+    font-family: 'Open Sans';
   }
   
   

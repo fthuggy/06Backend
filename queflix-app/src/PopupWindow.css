@@ -1,7 +1,6 @@
 @font-face {
-  font-family: "SuperRichExpanded";
-  src: url("./Assets/fonts/SuperRichExpanded_PERSONAL_USE_ONLY - Stretch.otf")
-    format("opentype");
+  font-family: 'Open Sans';
+  src: url('/fonts/OpenSans_Condensed-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
